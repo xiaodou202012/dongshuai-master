@@ -1,7 +1,7 @@
 import re
-from common.exception_utils import exception_utils
-from common.text_util import *
-from common.yaml_util import *
+from interface2.common.exception_utils import exception_utils
+from interface2.common.text_util import *
+from interface2.common.yaml_util import *
 
 
 @exception_utils

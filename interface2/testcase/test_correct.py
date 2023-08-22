@@ -1,10 +1,10 @@
 import pytest
-from common.extract_util import extract_util
-from common.request_util import request_utl
-from common.yaml_util import *
+from interface2.common.extract_util import extract_util
+from interface2.common.request_util import request_utl
+from interface2.common.yaml_util import *
 import json
 import allure
-from common.log_util import LogUtil
+from interface2.common.log_util import LogUtil
 
 
 

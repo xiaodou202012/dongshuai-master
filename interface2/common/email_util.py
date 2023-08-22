@@ -2,8 +2,8 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
-from common.text_util import base_dir
-from common.exception_utils import *
+from interface2.common.text_util import base_dir
+from interface2.common.exception_utils import *
 
 @exception_utils
 def email_util(att=None, content=None, subject=None):

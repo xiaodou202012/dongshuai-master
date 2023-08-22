@@ -1,16 +1,16 @@
-from pathlib import Path
+import pathlib
 from openpyxl import load_workbook
-from common.exception_utils import exception_utils
+from interface2.common.exception_utils import exception_utils
 import time
-from common.text_util import read_txt_handel
+from interface2.common.text_util import read_txt_handel
 
 
 @exception_utils
 class ExcelUtil(object):
 
-    def __init__(self, excel_path='%s/data/case_excel/接口测试框架实践用例.xlsx' % Path(__file__).parent.parent):
+    def __init__(self, excel_path='%s/data/case_excel/接口测试框架实践用例.xlsx' % pathlib.Path(__file__).parent.parent):
         self.wb = load_workbook(excel_path)
-        self.base_dir = Path(__file__).parent.parent
+        self.base_dir = pathlib.Path(__file__).parent.parent
         self.template = """{"id":0,"url":"","case_name":"","header":"","method":"","body":"",
         "expect":"","actual":"","valiadate":""},"""  # 这个是写入用例的模板
 

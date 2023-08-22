@@ -1,7 +1,7 @@
 from functools import wraps
 from pathlib import Path
 import yaml
-from common.excel_util import ExcelUtil
+from interface2.common.excel_util import ExcelUtil
 
 
 base_dir = Path(__file__).parent.parent

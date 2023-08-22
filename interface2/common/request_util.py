@@ -1,6 +1,6 @@
 import json
 import requests
-from common.text_util import *
+from interface2.common.text_util import *
 
 
 def request_utl(method, url, headers, payloads, params=None, expect=None, run_result_txt=None):
