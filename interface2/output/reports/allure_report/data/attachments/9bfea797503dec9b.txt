@@ -1,0 +1,1 @@
+INFO     root:log_util.py:37 name：风火轮查看k学情饼图-正常，url：http://ailearn-interface-stress.xk12.cn/api/app/interface/knowledge/statistic，reponse：{"code": 0, "msg": "成功", "data": {"k_color": 0, "kname": "一般现在时及其被动语态", "q_color": [{"color": "2", "question_num": 0}, {"color": "3", "question_num": 0}, {"color": "4", "question_num": 0}], "relation_k": []}}

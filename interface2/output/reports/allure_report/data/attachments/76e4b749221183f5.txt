@@ -1,0 +1,1 @@
+INFO     root:log_util.py:37 name：风火轮查看k学情饼图-student_id为空，url：http://ailearn-interface-stress.xk12.cn/api/app/interface/knowledge/statistic，reponse：{"code": 10000, "msg": "参数错误"}

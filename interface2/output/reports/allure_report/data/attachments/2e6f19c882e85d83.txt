@@ -1,0 +1,1 @@
+INFO     root:log_util.py:37 name：学生收藏的智课的科学列表-参数为null，url：http://ailearn-interface-dev.xk12.cn/api/pad/interface/minicourse/collected/subject/list，reponse：{"code": 10000, "message": "参数错误"}

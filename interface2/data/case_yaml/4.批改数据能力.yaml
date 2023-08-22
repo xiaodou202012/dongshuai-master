@@ -1,0 +1,40 @@
+cases:
+- id: 1
+  url: http://ailearn-interface-stress.xk12.cn/api/app/interface/knowledge/statistic
+  case_name: 风火轮查看k学情饼图-正常
+  header: "{\n  'requestid': '23456755',\n  'token': '${token}'\n}\n"
+  method: get
+  body: '{"student_id":81951388231,
+
+    "ktype":2,
+
+    "kid":3272}'
+  expect: '"code": 0, "msg": "成功"'
+  actual: null
+  valiadate: null
+- id: 2
+  url: http://ailearn-interface-stress.xk12.cn/api/app/interface/knowledge/statistic
+  case_name: 风火轮查看k学情饼图-student_id为空
+  header: "{\n  'requestid': '23456755',\n  'token': '${token}'\n}\n"
+  method: get
+  body: '{
+
+    "ktype":2,
+
+    "kid":3272}'
+  expect: '{"code": 10000, "msg": "参数错误"}'
+  actual: null
+  valiadate: null
+- id: 3
+  url: http://ailearn-interface-stress.xk12.cn/api/app/interface/knowledge/statistic
+  case_name: 风火轮查看k学情饼图-student_id为特殊字符
+  header: "{\n  'requestid': '23456755',\n  'token': '${token}'\n}\n"
+  method: get
+  body: '{"student_id":"@#$%",
+
+    "ktype":2,
+
+    "kid":3272}'
+  expect: '{"code": 10000, "msg": "参数错误"}'
+  actual: null
+  valiadate: null

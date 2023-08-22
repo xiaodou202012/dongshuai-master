@@ -1,0 +1,43 @@
+cases:
+- id: 1
+  url: http://stupad-dev.xk12.cn/api/pad/v3/user/login
+  case_name: 登录-正常
+  header: "{\n  'requestid': '12345',\n  'Content-Type': 'application/json'\n}"
+  method: post
+  body: "{\n    \"pwd\": \"kWUQSXvgKMK5EAzikYYvK44ti2OPLVZ8WQupI34ZHeZ6jqe3Z19IvOhYdzq0ITaS0/vyif259M1rYAMomgRoaF4YQrYX4X4HKqJ0DoNYEoE8v28wFMxqAIQkr8sYPAaXqx+feR62wZphwfM4B6vVkE6l9kTTo90rEqsPIycU0ik=\"\
+    ,\n    \"uname\": \"81951573585\"\n}"
+  expect: '"emsg":"登录成功"'
+  actual: null
+  valiadate: null
+- id: 1
+  url: http://ailearn-interface-dev.xk12.cn/api/pad/interface/minicourse/collected/subject/list
+  case_name: 学生收藏的智课的科学列表-正常
+  header: "{\n  'requestid': '23456754'\n}\n"
+  method: get
+  body: '{"student_id":"81951573257"}'
+  expect: '"code": 0, "message": "success"'
+  actual: null
+  valiadate: null
+- id: 6
+  url: http://stupad-dev.xk12.cn/api/pad/v3/user/login
+  case_name: 登录-正常
+  header: "{\n  'requestid': '12345',\n  'Content-Type': 'application/json'\n}"
+  method: post
+  body: "{\n    \"pwd\": \"kWUQSXvgKMK5EAzikYYvK44ti2OPLVZ8WQupI34ZHeZ6jqe3Z19IvOhYdzq0ITaS0/vyif259M1rYAMomgRoaF4YQrYX4X4HKqJ0DoNYEoE8v28wFMxqAIQkr8sYPAaXqx+feR62wZphwfM4B6vVkE6l9kTTo90rEqsPIycU0ik=\"\
+    ,\n    \"uname\": \"81951573585\"\n}"
+  expect: '"emsg":"登录成功"'
+  actual: null
+  valiadate: null
+- id: 1
+  url: http://ailearn-interface-stress.xk12.cn/api/app/interface/knowledge/statistic
+  case_name: 风火轮查看k学情饼图-正常
+  header: "{\n  'requestid': '23456755',\n  'token': '${token}'\n}\n"
+  method: get
+  body: '{"student_id":81951388231,
+
+    "ktype":2,
+
+    "kid":3272}'
+  expect: '"code": 0, "msg": "成功"'
+  actual: null
+  valiadate: null

@@ -1,0 +1,187 @@
+{
+  "uid" : "4c8afcb23db59577",
+  "name" : "test_login[args1]",
+  "fullName" : "testcase.test_login#test_login",
+  "historyId" : "55ea1701070e45ca511424b2ca6ad5ef",
+  "time" : {
+    "start" : 1631176167549,
+    "stop" : 1631176167591,
+    "duration" : 42
+  },
+  "description" : "登录接口，获取token",
+  "descriptionHtml" : "<p>登录接口，获取token</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1631176167344,
+      "stop" : 1631176167391,
+      "duration" : 47
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "登录接口，获取token",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "登录接口测试步骤",
+      "time" : {
+        "start" : 1631176167549,
+        "stop" : 1631176167591,
+        "duration" : 42
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "接口返回：{\"meta\":{\"ecode\":1003,\"emsg\":\"帐号或密码错误\",\"debug\":null},\"data\":null}",
+        "time" : {
+          "start" : 1631176167590,
+          "stop" : 1631176167590,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "步骤二",
+        "time" : {
+          "start" : 1631176167590,
+          "stop" : 1631176167590,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "ce7ad73fe122f9b0",
+        "name" : "这是图片名",
+        "source" : "ce7ad73fe122f9b0.attach",
+        "type" : "image/jpeg",
+        "size" : 79433
+      }, {
+        "uid" : "79db4324ae638322",
+        "name" : "接口返回",
+        "source" : "79db4324ae638322.attach",
+        "type" : "text/plain",
+        "size" : 79
+      } ],
+      "parameters" : [ {
+        "name" : "args",
+        "value" : "{'id': 2, 'url': 'http://stupad-dev.xk12.cn/api/pad/v3/user/login', 'case_name': '登录-正确的用户名，错误的密码', 'header': \"{\\n  'requestid': '12345',\\n  'Content-Type': 'application/json'\\n}\", 'method': 'post', 'body': '{\\n    \"pwd\": \"123445\",\\n    \"uname\": \"81951573585\"\\n}', 'expect': '\"ecode\":1003,\"emsg\":\"帐号或密码错误\"', 'actual': None, 'valiadate': None}"
+      } ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "d827db9359d065e9",
+      "name" : "log",
+      "source" : "d827db9359d065e9.txt",
+      "type" : "text/plain",
+      "size" : 227
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1631176168259,
+      "stop" : 1631176199262,
+      "duration" : 31003
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "登录-story"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "epic",
+    "value" : "okay智慧教育"
+  }, {
+    "name" : "feature",
+    "value" : "登录-模块"
+  }, {
+    "name" : "tag",
+    "value" : "all"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "dongshuaideMacBook-Air.local"
+  }, {
+    "name" : "thread",
+    "value" : "3202-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "{'id': 2, 'url': 'http://stupad-dev.xk12.cn/api/pad/v3/user/login', 'case_name': '登录-正确的用户名，错误的密码', 'header': \"{\\n  'requestid': '12345',\\n  'Content-Type': 'application/json'\\n}\", 'method': 'post', 'body': '{\\n    \"pwd\": \"123445\",\\n    \"uname\": \"81951573585\"\\n}', 'expect': '\"ecode\":1003,\"emsg\":\"帐号或密码错误\"', 'actual': None, 'valiadate': None}"
+  } ],
+  "links" : [ {
+    "name" : "百度一下",
+    "url" : "http://www.baidu.com",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "all", "run(order=1)" ]
+  },
+  "source" : "4c8afcb23db59577.json",
+  "parameterValues" : [ "{'id': 2, 'url': 'http://stupad-dev.xk12.cn/api/pad/v3/user/login', 'case_name': '登录-正确的用户名，错误的密码', 'header': \"{\\n  'requestid': '12345',\\n  'Content-Type': 'application/json'\\n}\", 'method': 'post', 'body': '{\\n    \"pwd\": \"123445\",\\n    \"uname\": \"81951573585\"\\n}', 'expect': '\"ecode\":1003,\"emsg\":\"帐号或密码错误\"', 'actual': None, 'valiadate': None}" ]
+}
